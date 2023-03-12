@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import {useDispatch, useSelector} from 'react-redux';
 
-const Home = () => {
+const Login = () => {
   const dispatch = useDispatch();
   const data = useSelector((state: any) => state);
   console.log('data', data);
@@ -36,4 +36,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Login;
