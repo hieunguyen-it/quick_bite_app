@@ -65,14 +65,14 @@
     "baseUrl": "./",
     "paths": {
       "@*": ["src/*"],
-      "@assets/*": ["src/Assets/*"],
-      "@components/*": ["src/Components/*"],
-      "@store/*": ["src/Store/*"],
-      "@navigators/*": ["src/Navigators/*"],
-      "@screens/*": ["src/Screens/*"],
-      "@services/*": ["src/Services/*"],
-      "@utils/*": ["src/Utils/*"],
-      "@type/*": ["src/Types/*"]
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@store/*": ["src/store/*"],
+      "@navigators/*": ["src/navigators/*"],
+      "@screens/*": ["src/screens/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@type/*": ["src/types/*"]
     }
   },
   "exclude": [
