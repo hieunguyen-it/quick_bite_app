@@ -1,4 +1,6 @@
 export default {
-  Login: 'LOGIN',
   AuthStack: 'AUTH_STACK',
+  OnBoardingStack: 'ONBOARDING_STACK',
+  Login: 'LOGIN',
+  Onboading: 'ONBOARDING',
 };

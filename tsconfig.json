@@ -72,7 +72,8 @@
       "@screens/*": ["src/screens/*"],
       "@services/*": ["src/services/*"],
       "@utils/*": ["src/utils/*"],
-      "@type/*": ["src/types/*"]
+      "@type/*": ["src/types/*"],
+      "@styles/*": ["src/styles/*"]
     }
   },
   "exclude": [

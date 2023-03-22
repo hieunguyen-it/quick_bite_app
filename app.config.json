@@ -1,0 +1,22 @@
+{
+  "onBoadring": {
+    "commonContent": " Integer a viverra sit feugiat leo commodo nunc.",
+    "onboardingConfig": [
+      {
+        "content": "Satisfy your cravings with",
+        "contentColor": "ease",
+        "image": "https://ucarecdn.com/3eff4d77-cf76-46ac-ae6a-47944cedd962/Ellipse4.png"
+      },
+      {
+        "content": "Find your new favorite restaurant with",
+        "contentColor": "just a tap",
+        "image": "https://ucarecdn.com/e49a9d5b-b684-40c5-bbba-6264724e4358/Ellipse41.png"
+      },
+      {
+        "content": "Fresh meals, delivered to your  ",
+        "contentColor": "doorstep",
+        "image": "https://ucarecdn.com/ffd41152-dd5e-4b1e-8899-5c02eb571756/Ellipse5.png"
+      }
+    ]
+  }
+}

@@ -6,14 +6,18 @@ install! 'cocoapods', :deterministic_uuids => false
 
 target 'QuickBiteApp' do
   config = use_native_modules!
+  use_frameworks! :linkage => :static
 
   flags = get_default_flags()
 
+  # right after `use_frameworks! :linkage => :static`
+  $RNFirebaseAsStaticFramework = true
+
   use_react_native!(
     :path => config[:reactNativePath],
-    :hermes_enabled => true,
+    :hermes_enabled => false,
     :fabric_enabled => flags[:fabric_enabled],
-    :flipper_configuration => FlipperConfiguration.enabled,
+    # :flipper_configuration => FlipperConfiguration.enabled,
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
