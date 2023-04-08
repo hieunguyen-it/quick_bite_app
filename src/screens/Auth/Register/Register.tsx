@@ -1,24 +1,23 @@
 import React, {FC} from 'react';
-import {Text, View, TouchableOpacity} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import Scale from '@utils/constants/scale';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import styles from './styles';
-import {navigate} from '@services/navigation/NavigationHelpers';
-import RouteName from '@navigators/RouteName';
+import {goBack} from '@services/navigation/NavigationHelpers';
 import {Colors} from '@styles';
 
 // type Props = {
 //   // product: number;
 // };
 
-const Login: FC = () => {
-  const navRegister = () => {
-    navigate(RouteName.Register);
+const Register: FC = () => {
+  const backToLogin = () => {
+    goBack();
   };
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text style={{fontSize: Scale.FONT_SIZE_SMALL}}>Login Screen</Text>
+        <Text style={{fontSize: Scale.FONT_SIZE_SMALL}}>Register Screen</Text>
       </View>
 
       <TouchableOpacity
@@ -26,11 +25,11 @@ const Login: FC = () => {
           padding: Scale.PADDING_MEDIUM,
           borderRadius: Scale.BORDER_RADIUS_LARGE,
         }}
-        onPress={navRegister}>
-        <Text style={{color: Colors.red700}}>Navigation Register</Text>
+        onPress={backToLogin}>
+        <Text style={{color: Colors.red700}}>Back To Login Screen</Text>
       </TouchableOpacity>
     </SafeAreaView>
   );
 };
 
-export default Login;
+export default Register;

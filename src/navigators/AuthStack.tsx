@@ -1,7 +1,7 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import RouteName from './RouteName';
-import {Login} from '@screens';
+import {Login, Register} from '@screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +14,7 @@ const AuthStack = ({route}: {route: any}) => (
       component={Login}
       initialParams={route.params}
     />
+    <Stack.Screen name={RouteName.Register} component={Register} />
   </Stack.Navigator>
 );
 
